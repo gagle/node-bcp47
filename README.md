@@ -7,7 +7,7 @@ BCP 47 parser
 
 [Availability](#availability) | [Compatibility](#compatibility) | [Documentation](#documentation)
 
-Version: 0.0.1
+Version: 1.0.0
 
 <a name="availability"></a>
 #### Availability [↑](#start) ####
