@@ -147,13 +147,13 @@ BCP47.parse = function (tag){
 	return {
 		language: {
 			language: language,
-			extlang: match4
+			extlang: match4 || []
 		},
 		script: match[5] || null,
 		region: match[6] || null,
 		variant: match7 || null,
 		extension: parseExtension (match[8]),
-		privateuse: match9 || match3,
+		privateuse: match9 || match3 || [],
 		grandfathered: {
 			irregular: match[1] || null,
 			regular: match[2] || null
@@ -166,7 +166,7 @@ BCP47.isValid = function (tag){
 };
 
 var parseExtension = function (tag){
-	if (!tag) return null;
+	if (!tag) return [];
 
 	var extensions = [];
 	var e;

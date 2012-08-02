@@ -29,8 +29,8 @@ Prints:
 	script: "Latn",
 	region: "IT",
 	variant: ["arevela"],
-	extension: null,
-	privateuse: null,
+	extension: [],
+	privateuse: [],
 	grandfathered: {
 		irregular: null,
 		regular: null
