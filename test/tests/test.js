@@ -1,4 +1,4 @@
-var BCP47 = require ("../../src/bcp47");
+var BCP47 = require ("../../build/bcp47");
 var assert = require ("assert");
 
 var tags;

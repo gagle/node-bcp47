@@ -12,11 +12,11 @@
 var BCP47 = {};
 
 BCP47.parse = function (tag){
-	var re = /^(?:(en-GB-oed|i-(?:ami|bnn|default|enochian|hak|klingon|lux|mingo|navajo|pwn|tao|tay|tsu)|sgn-(?:BE-FR|BE-NL|CH-DE))|(art-lojban|cel-gaulish|no-(?:bok|nyn)|zh-(?:guoyu|hakka|min|min-nan|xiang)))|(x(?:-[0-9a-z]{1,8})+)|(?:((?:[a-z]{2,3}(?:(?:-[a-z]{3}){1,3})?)|[a-z]{4}|[a-z]{5,8})(?:-([a-z]{4}))?(?:-([a-z]{2}|[0-9]{3}))?((?:-(?:[a-z0-9]{5,8}|[0-9][a-z0-9]{3}))*)?((?:-[0-9a-wy-z](?:-[a-z0-9]{2,8}){1,})*)?(-x(?:-[0-9a-z]{1,8})+)?)$/i;
+	var re = /^(?:(en-GB-oed|i-(?:ami|bnn|default|enochian|hak|klingon|lux|mingo|navajo|pwn|tao|tay|tsu)|sgn-(?:BE-FR|BE-NL|CH-DE))|(art-lojban|cel-gaulish|no-(?:bok|nyn)|zh-(?:guoyu|hakka|min|min-nan|xiang)))$|^(x(?:-[0-9a-z]{1,8})+)$|^(?:((?:[a-z]{2,3}(?:(?:-[a-z]{3}){1,3})?)|[a-z]{4}|[a-z]{5,8})(?:-([a-z]{4}))?(?:-([a-z]{2}|[0-9]{3}))?((?:-(?:[a-z0-9]{5,8}|[0-9][a-z0-9]{3}))*)?((?:-[0-9a-wy-z](?:-[a-z0-9]{2,8}){1,})*)?(-x(?:-[0-9a-z]{1,8})+)?)$/i;
 	
 	/**
-	 *	/^												match beginning of line
-	 *	(?:
+	 *	/
+	 *	^(?:
 	 *		(											irregular
 	 *			en-GB-oed |
 	 *			i-
@@ -59,14 +59,14 @@ BCP47.parse = function (tag){
 	 *				xiang
 	 *			)
 	 *		)
-	 *	) |
-	 *	(												privateuse
+	 *	)$ |
+	 *	^(												privateuse
 	 *		x
 	 *		(?:
 	 *			-[0-9a-z]{1,8}
 	 *		)+
-	 *	) |
-	 *	(?:												langtag
+	 *	)$ |
+	 *	^(?:											langtag
 	 *		(											language
 	 *			(?:
 	 *				[a-z]{2,3}							ISO 639
@@ -116,8 +116,7 @@ BCP47.parse = function (tag){
 	 *				-[0-9a-z]{1,8}
 	 *			)+
 	 *		)?
-	 *	)
-	 *	$/												match end of line
+	 *	)$/
 	 *	i												case insensitive
 	 */
 	var match = re.exec (tag);
