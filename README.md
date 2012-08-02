@@ -1,7 +1,7 @@
 <a name="start"></a>
 
-BCP 47 parser
-=============
+Node BCP47
+==========
 
 #### Parser for the BCP 47 language tag specification for node.js. ####
 
