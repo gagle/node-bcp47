@@ -123,8 +123,6 @@ BCP47.parse = function (tag){
 	var match = re.exec (tag);
 	if (!match) return null;
 	
-	console.log (match);
-	
 	var match4 = match[4];
 	match4 = match4 ? match4.split ("-") : null;
 	var language = null;
