@@ -63,6 +63,5 @@ Or simply copying `build/bcp47.js` into your project's directory and `require()`
 #### Documentation [↑](#start) ####
  
 [Reference](https://github.com/Gagle/Node-BCP47/wiki/Reference)  
-[Examples](https://github.com/Gagle/Node-BCP47/tree/master/examples)  
 [Change Log](https://github.com/Gagle/Node-BCP47/wiki/Change-Log)  
 [MIT License](https://github.com/Gagle/Node-BCP47/blob/master/LICENSE)
