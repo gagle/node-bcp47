@@ -3,7 +3,7 @@
 Node BCP47
 ==========
 
-#### Parser for the BCP 47 language tag specification for node.js. ####
+#### Parser for the BCP 47 language tag specification for node.js ####
 
 [Show me!](#showme) | [Availability](#availability) | [Compatibility](#compatibility) | [Documentation](#documentation)
 

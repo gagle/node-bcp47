@@ -119,6 +119,7 @@ BCP47.parse = function (tag){
 	 *	)$/
 	 *	i												case insensitive
 	 */
+	
 	var match = re.exec (tag);
 	if (!match) return null;
 	
