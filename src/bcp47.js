@@ -126,9 +126,7 @@ BCP47.parse = function (tag){
 	var match4 = match[4];
 	match4 = match4 ? match4.split ("-") : null;
 	var language = null;
-	if (match4){
-		language = match4.shift ();
-	}
+	if (match4) language = match4.shift ();
 	
 	var match7 = match[7];
 	match7 = match7 ? match7.split ("-") : null;
