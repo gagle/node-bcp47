@@ -1,6 +1,6 @@
 /**
  * @name BCP47.
- * @description Parser for the BCP 47 language tag specification for node.js.
+ * @description Parser for the BCP 47 language tag specification.
  *
  * @author Gabriel Llamas
  * @created 31/07/2012
