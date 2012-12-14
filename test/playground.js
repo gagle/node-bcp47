@@ -1,1 +1,0 @@
-var BCP47 = require ("../build/bcp47");

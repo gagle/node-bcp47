@@ -1,0 +1,6 @@
+node_modules
+tests
+BCP 47 specification
+.npmignore
+CHANGES
+LICENSE

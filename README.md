@@ -1,24 +1,25 @@
-<a name="start"></a>
-
-Node BCP47
-==========
+bcp47
+=====
 
 _Node.js project_
 
 #### Parser for the BCP 47 language tag specification ####
 
-[Show me!](#showme) | [Availability](#availability) | [Compatibility](#compatibility) | [Documentation](#documentation)
+Version: 1.0.1
 
-Version: 1.0.0
+#### Installation ####
 
-<a name="showme"></a>
-#### Show me! [↑](#start) ####
+```
+npm install bcp47
+```
+
+#### Example ####
 
 ```javascript
-var BCP47 = require ("bcp47");
+var bcp47 = require ("bcp47");
 
 //Eastern Armenian written in Latin script, as used in Italy
-console.log (BCP47.parse ("hy-Latn-IT-arevela"));
+console.log (bcp47.parse ("hy-Latn-IT-arevela"));
 
 /*
 Prints:
@@ -40,32 +41,3 @@ Prints:
 }
 */
 ```
-
-***
-
-<a name="availability"></a>
-#### Availability [↑](#start) ####
-
-Via npm:
-
-```
-npm install bcp47
-```
-
-Or simply copying `build/bcp47.js` into your project's directory and `require()` accordingly.
-
-***
-
-<a name="compatibility"></a>
-#### Compatibility [↑](#start) ####
-
-✔ Node *
-
-***
-
-<a name="documentation"></a>
-#### Documentation [↑](#start) ####
- 
-[Reference](https://github.com/Gagle/Node-BCP47/wiki/Reference)  
-[Change Log](https://github.com/Gagle/Node-BCP47/wiki/Change-Log)  
-[MIT License](https://github.com/Gagle/Node-BCP47/blob/master/LICENSE)

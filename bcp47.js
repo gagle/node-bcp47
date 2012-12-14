@@ -1,17 +1,8 @@
-/**
- * @name BCP47.
- * @description Parser for the BCP 47 language tag specification.
- *
- * @author Gabriel Llamas
- * @created 31/07/2012
- * @modified 02/08/2012
- * @version 1.0.0
- */
 "use strict";
 
-var BCP47 = {};
+var bcp47 = module.exports = {};
 
-BCP47.parse = function (tag){
+bcp47.parse = function (tag){
 	var re = /^(?:(en-GB-oed|i-(?:ami|bnn|default|enochian|hak|klingon|lux|mingo|navajo|pwn|tao|tay|tsu)|sgn-(?:BE-FR|BE-NL|CH-DE))|(art-lojban|cel-gaulish|no-(?:bok|nyn)|zh-(?:guoyu|hakka|min|min-nan|xiang)))$|^(x(?:-[0-9a-z]{1,8})+)$|^(?:((?:[a-z]{2,3}(?:(?:-[a-z]{3}){1,3})?)|[a-z]{4}|[a-z]{5,8})(?:-([a-z]{4}))?(?:-([a-z]{2}|[0-9]{3}))?((?:-(?:[a-z0-9]{5,8}|[0-9][a-z0-9]{3}))*)?((?:-[0-9a-wy-z](?:-[a-z0-9]{2,8}){1,})*)?(-x(?:-[0-9a-z]{1,8})+)?)$/i;
 	
 	/**
@@ -160,8 +151,8 @@ BCP47.parse = function (tag){
 	};
 };
 
-BCP47.isValid = function (tag){
-	return BCP47.parse (tag) !== null;
+bcp47.isValid = function (tag){
+	return bcp47.parse (tag) !== null;
 };
 
 var parseExtension = function (tag){
@@ -222,5 +213,3 @@ var parseExtension = function (tag){
 	
 	return extensions;
 };
-
-module.exports = BCP47;
