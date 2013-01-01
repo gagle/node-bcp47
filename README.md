@@ -19,7 +19,11 @@ npm install bcp47
 var bcp47 = require ("bcp47");
 
 //Eastern Armenian written in Latin script, as used in Italy
-console.log (bcp47.parse ("hy-Latn-IT-arevela"));
+var tag = "hy-Latn-IT-arevela";
+
+console.log (bcp47.isValid (tag)); //true
+
+console.log (bcp47.parse (tag));
 
 /*
 Prints:
