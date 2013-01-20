@@ -21,5 +21,5 @@
 		"type": "MIT",
 		"url": "http://www.opensource.org/licenses/mit-license.html"
 	}],
-	"main": "bcp47"
+	"main": "lib/bcp47"
 }

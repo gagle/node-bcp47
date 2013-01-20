@@ -1,7 +1,7 @@
 "use strict";
 
 var ASSERT = require ("assert");
-var bcp47 = require ("../bcp47");
+var bcp47 = require ("../lib/bcp47");
 
 describe ("bcp47", function (){
 	it ("langtag and language", function (done){
