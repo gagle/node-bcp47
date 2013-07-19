@@ -1,6 +1,4 @@
-node_modules
-tests
-BCP 47 specification
-.npmignore
+test
 CHANGES
 LICENSE
+.npmignore

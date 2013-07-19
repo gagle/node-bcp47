@@ -1,25 +1,22 @@
 {
 	"name": "bcp47",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "Parser for the BCP 47 language tag specification",
 	"keywords": ["bcp47", "parser", "internationalization", "i18n", "language"],
 	"author": {
 		"name": "Gabriel Llamas",
-		"email": "gaglekas@gmail.com"
+		"email": "gagle@outlook.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/Gagle/Node-BCP47.git"
+		"url": "git://github.com/Gagle/node-bcp47.git"
 	},
 	"engines": {
-		"node": "*"
+		"node": ">=0.10"
 	},
 	"devDependencies": {
-		"mocha-runner": "*"
+		"speedy": "*"
 	},
-	"licenses": [{
-		"type": "MIT",
-		"url": "http://www.opensource.org/licenses/mit-license.html"
-	}],
-	"main": "lib/bcp47"
+	"license": "MIT",
+	"main": "lib"
 }
