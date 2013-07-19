@@ -14,9 +14,6 @@
 	"engines": {
 		"node": ">=0.10"
 	},
-	"devDependencies": {
-		"speedy": "*"
-	},
 	"license": "MIT",
 	"main": "lib"
 }
