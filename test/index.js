@@ -97,7 +97,6 @@ var tests = {
 	"langtag extension": function (){
 		tags = bcp47.parse ("aa-7-123abc-abc-a-12");
 		assert.strictEqual (tags.langtag.language.language, "aa");
-		assert.strictEqual (tags.langtag.language.language, "aa");
 		assert.deepEqual (tags.langtag.extension,
 			[
 				{
