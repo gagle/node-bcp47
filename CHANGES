@@ -1,4 +1,4 @@
-v1.1.0 (18 Jul 2013)
+v1.1.0 (19 Jul 2013)
 	Improved speed by ~10%.
 	The result of "parse()" has been slightly modified.
 	Removed "isValid()".
