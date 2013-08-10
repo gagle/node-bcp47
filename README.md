@@ -22,5 +22,6 @@ npm install bcp47
 ---
 
 <a name="parse"></a>
-___module_.parse(tag) : Object__  
+___module_.parse(tag) : Object__
+
 Parses the language tag and returns an object with all the available information. Look at the [examples](https://github.com/gagle/node-bcp47/tree/master/examples) folder to see what information returns.
