@@ -3,14 +3,8 @@
 	"version": "1.1.0",
 	"description": "Parser for the BCP 47 language tag specification",
 	"keywords": ["bcp47", "parser", "internationalization", "i18n", "language"],
-	"author": {
-		"name": "Gabriel Llamas",
-		"email": "gagle@outlook.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/gagle/node-bcp47.git"
-	},
+	"author": "Gabriel Llamas <gagle@outlook.com>",
+	"repository": "git://github.com/gagle/node-bcp47.git",
 	"engines": {
 		"node": ">=0.10"
 	},
