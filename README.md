@@ -5,7 +5,8 @@ _Node.js project_
 
 #### Parser for the BCP 47 language tag specification ####
 
-Version: 1.1.0
+[![NPM version](https://badge.fury.io/js/bcp47.png)](http://badge.fury.io/js/bcp47 "Fury Version Badge")
+[![Build Status](https://secure.travis-ci.org/gagle/node-bcp47.png)](http://travis-ci.org/gagle/node-bcp47 "Travis CI Badge")
 
 BCP: [47](http://tools.ietf.org/html/bcp47)
 
