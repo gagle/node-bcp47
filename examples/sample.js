@@ -7,21 +7,21 @@ console.log (bcp47.parse ("hy-Latn-IT-arevela"));
 
 /*
 {
-	langtag: {
-		language: {
-			language: "hy",
-			extlang: []
-		},
-		script: "Latn",
-		region: "IT",
-		variant: ["arevela"],
-		extension: [],
-		privateuse: []
-	},
-	privateuse: [],
-	grandfathered: {
-		irregular: null,
-		regular: null
-	}
+  langtag: {
+    language: {
+      language: "hy",
+      extlang: []
+    },
+    script: "Latn",
+    region: "IT",
+    variant: ["arevela"],
+    extension: [],
+    privateuse: []
+  },
+  privateuse: [],
+  grandfathered: {
+    irregular: null,
+    regular: null
+  }
 }
 */
