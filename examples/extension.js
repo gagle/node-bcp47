@@ -1,9 +1,9 @@
-"use strict";
+'use strict';
 
-var bcp47 = require ("../lib");
-var util = require ("util");
+var bcp47 = require('../lib');
+var util = require('util');
 
-console.log (util.inspect (bcp47.parse ("aa-7-123abc-abc-a-12"),
+console.log(util.inspect(bcp47.parse('aa-7-123abc-abc-a-12'),
     { depth: null }));
 
 /*

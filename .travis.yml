@@ -1,4 +1,5 @@
 language: node_js
 node_js:
-  - "0.11"
   - "0.10"
+  - "0.11"
+after_script: "npm install coveralls && npm run-script test-lcov | ./node_modules/.bin/coveralls"
